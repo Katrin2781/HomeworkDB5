@@ -1,0 +1,34 @@
+[
+  {"model": "publisher", "fields": [{"id": 1, "name": "O\u2019Reilly"},
+                                    {"id": 2, "name": "Pearson"},
+                                    {"id": 3, "name": "Microsoft Press"},
+                                    {"id": 4, "name": "No starch press"}]},
+
+  {"model": "book", "fields": [{"id": 1, "title": "Programming Python, 4th Edition", "id_publisher": 1},
+                               {"id": 2, "title": "Learning Python, 4th Edition", "id_publisher": 1},
+                               {"id": 3, "title": "Natural Language Processing with Python", "id_publisher": 1},
+                               {"id": 4, "title": "Hacking: The Art of Exploitation", "id_publisher": 4},
+                               {"id": 5, "title": "Modern Operating Systems", "id_publisher": 2},
+                               {"id": 6, "title": "Code Complete: Second Edition", "id_publisher": 3}]},
+
+  {"model": "shop", "fields": [{"id": 1, "name": "Labirint"},
+                               {"id": 2, "name": "OZON"},
+                               {"id": 3, "name": "Amazon"}]},
+
+  {"model": "stock", "fields": [{"id": 1, "id_shop": 1, "id_book": 1, "count": 34},
+                                {"id": 2, "id_shop": 1, "id_book": 2, "count": 30},
+                                {"id": 3, "id_shop": 1, "id_book": 3, "count": 0},
+                                {"id": 4, "id_shop": 2, "id_book": 5, "count": 40},
+                                {"id": 5, "id_shop": 2, "id_book": 6, "count": 50},
+                                {"id": 6, "id_shop": 3, "id_book": 4, "count": 10},
+                                {"id": 7, "id_shop": 3, "id_book": 6, "count": 10},
+                                {"id": 8, "id_shop": 2, "id_book": 1, "count": 10},
+                                {"id": 9, "id_shop": 3, "id_book": 1, "count": 10}]},
+
+  {"model": "sale", "fields":[{"id": 1, "price": "50.05", "date_sale": "2018-10-25T09:45:24.552Z", "count": 16, "id_stock": 1},
+                              {"id": 2, "price": "50.05", "date_sale": "2018-10-25T09:51:04.113Z", "count": 10, "id_stock": 3},
+                              {"id": 3, "price": "10.50", "date_sale": "2018-10-25T09:52:22.194Z", "count": 9, "id_stock": 6},
+                              {"id": 4, "price": "16.00", "date_sale": "2018-10-25T10:59:56.230Z", "count": 5, "id_stock": 5},
+                              {"id": 5, "price": "16.00", "date_sale": "2018-10-25T10:59:56.230Z", "count": 5, "id_stock": 9},
+                              {"id": 6, "price": "16.00", "date_sale": "2018-10-25T10:59:56.230Z", "count": 1, "id_stock": 4}]}
+]
